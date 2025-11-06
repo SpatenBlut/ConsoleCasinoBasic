@@ -1,6 +1,5 @@
 #pragma once
 
-
 void bet();
 void lost();
 void won();
