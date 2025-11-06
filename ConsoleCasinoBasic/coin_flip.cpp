@@ -6,6 +6,7 @@
 #include "money.h"
 
 void HeadsTails(const std::string& choiceHT) {
+	// Seed random number generator
     std::srand(static_cast<unsigned>(std::time(0)));
     int random = std::rand() % 2;
 

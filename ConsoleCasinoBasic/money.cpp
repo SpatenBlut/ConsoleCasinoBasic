@@ -25,10 +25,12 @@ void write(int wMoney) {
 	MyFile.close();
 }
 
+// Function to handle betting
 void bet() {
 	read();
 	std::cout << "Bet Amount: ";
 	std::cin >> amount;
+	// Validate bet amount
 	if (amount > balance) {
 		std::cout << "Insufficient Funds\n";
 		Sleep(1500);
