@@ -126,10 +126,12 @@
     <ClCompile Include="coin_flip.cpp" />
     <ClCompile Include="ConsoleCasinoBasic.cpp" />
     <ClCompile Include="money.cpp" />
+    <ClCompile Include="roulette.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="coin_flip.h" />
     <ClInclude Include="money.h" />
+    <ClInclude Include="roulette.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
