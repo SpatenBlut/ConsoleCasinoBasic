@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <Windows.h>
 #include "money.h"
 #include "coin_flip.h"
+#include "roulette.h"
 
 int option;
 bool loop;
@@ -17,7 +19,6 @@ void CflipUI() {
 		std::cin >> ht;
 
 		if (ht == "heads" || ht == "tails") {
-			ht[0] = toupper(ht[0]);
 			HeadsTails(ht);
 			break;
 		}
@@ -26,6 +27,10 @@ void CflipUI() {
 			std::cout << "Incorrect Input\n";
 		}
 	}
+}
+
+void RouletteUI() {
+	Roulette();
 }
 
 
@@ -38,12 +43,16 @@ int main() {
 		std::cout << "CASINO ROYAL	";
 		abalance();
 		std::cout << "1: Coin Flip\n";
+		std::cout << "2: Roulette\n";
 		std::cout << "4: Reset Balance\n";
 		std::cout << "5: Exit\n";
 		std::cin >> option;
 		system("cls");
 		if (option == 1) {
 			CflipUI();
+		}
+		else if (option == 2) {
+			RouletteUI();
 		}
 		else if (option == 4)
 		{

@@ -19,7 +19,7 @@ void HeadsTails(const std::string& choiceHT) {
         std::cout << "You guessed correctly!\n";
         std::cout << "You Won ";
         won();
-        Boutput();
+        std::cout << balance;
         Sleep(2500);
         system("cls");
     }
@@ -28,7 +28,7 @@ void HeadsTails(const std::string& choiceHT) {
         std::cout << "Wrong guess.\n";
         std::cout << "You Lost ";
         lost();
-        Boutput();
+		std::cout << balance;
         Sleep(2500);
         system("cls");
     }

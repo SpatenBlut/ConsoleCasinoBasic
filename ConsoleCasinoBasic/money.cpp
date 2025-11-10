@@ -5,6 +5,7 @@
 int balance;
 int amount;
 
+// Function to read balance from file
 void read() {
 	std::ifstream MyReadFile("money.ini");
 	if (MyReadFile.is_open()) {
@@ -18,7 +19,7 @@ void read() {
 		MyFile.close();
 	}
 }
-
+// Function to write balance to file
 void write(int wMoney) {
 	std::ofstream MyFile("money.ini");
 	MyFile << wMoney;
@@ -56,10 +57,6 @@ void won() {
 	read();
 	balance += amount;
 	write(balance);
-}
-
-void Boutput() {
-	std::cout << amount;
 }
 
 void abalance() {
