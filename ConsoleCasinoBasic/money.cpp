@@ -59,6 +59,12 @@ void won() {
 	write(balance);
 }
 
+void won2() {
+	read();
+	balance += amount * 15;
+	write(balance);
+}
+
 void abalance() {
 	read();
 	std::cout << "Balance: " << balance << std::endl;

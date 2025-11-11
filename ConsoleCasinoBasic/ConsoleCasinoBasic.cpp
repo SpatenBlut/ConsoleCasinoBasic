@@ -29,8 +29,9 @@ void CflipUI() {
 	}
 }
 
-void RouletteUI() {
-	Roulette();
+void roulette() {
+	bet();
+	RouletteUI();
 }
 
 
@@ -52,7 +53,7 @@ int main() {
 			CflipUI();
 		}
 		else if (option == 2) {
-			RouletteUI();
+			roulette();
 		}
 		else if (option == 4)
 		{
